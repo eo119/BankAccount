@@ -12,9 +12,10 @@
         align-items: center;
         justify-content: center;
         height: 100vh;
+        padding: 0 20px; 
     }
 
-    .main ,session1{
+    .main, session1 {
         text-align: center;
     }
 
