@@ -22,7 +22,7 @@ public class AuthenticationFilter implements Filter {
         HttpServletRequest httpRequest = (HttpServletRequest) request;
         HttpServletResponse httpResponse = (HttpServletResponse) response;
 
-        // 檢查使用者是否已經登入的邏輯
+       
         boolean userLoggedIn = isUserLoggedIn(httpRequest);
         
         if(userLoggedIn || isPublicResource(httpRequest)) {
@@ -35,10 +35,9 @@ public class AuthenticationFilter implements Filter {
     }
 
     private boolean isPublicResource(HttpServletRequest request) {
-        // 在這裡檢查是否訪問的是公共資源，例如靜態資源或登入頁面
         String requestURI = request.getRequestURI();
 
-        // 排除首頁
+        
         if (requestURI.equals(request.getContextPath() + "/index.jsp") ||
             requestURI.equals(request.getContextPath() + "/CreateAccountServlet")||
             requestURI.equals(request.getContextPath() + "/LoginServlet")) {
