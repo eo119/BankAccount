@@ -14,7 +14,7 @@
         height: 100vh;
     }
 
-    .main {
+    .main ,session1{
         text-align: center;
     }
 
