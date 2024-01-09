@@ -8,21 +8,38 @@
     }
 
     main {
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
         height: 100vh;
-        padding: 0 20px; 
+        overflow: hidden; 
+        margin: 0; /* 消除主區塊的margin */
     }
 
-    .main, session1 {
+    .main {
         text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    img {
+        max-height: calc(100vh - 20px);
+        width: 100%; /* 圖片寬度佔據整個版面 */
+        display: block;
+        margin: -20px auto 0; /* 將 margin-top 設為負值 */
     }
 
     h2, span {
         font-size: 1.5em;
     }
 </style>
+
+
+
+
 
 	<main>
 		<img src="./img/card.jpg" alt="">
