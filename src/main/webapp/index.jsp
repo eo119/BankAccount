@@ -12,13 +12,11 @@
         align-items: center;
         justify-content: center;
         height: 100vh;
-        padding: 0 20px;
-        background: url('card.jpg') center/cover no-repeat; /* 替換 'your-image-url.jpg' 為實際的圖片路徑 */
+        padding: 0 20px; 
     }
 
     .main, session1 {
         text-align: center;
-        color: #fff; 
     }
 
     h2, span {
