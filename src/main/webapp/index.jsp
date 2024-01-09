@@ -38,6 +38,9 @@
         font-size: 1.5em;
         color: black; 
     }
+    span{
+    	height: 100%;
+    }
 </style>
 
 
@@ -51,7 +54,7 @@
 	
 	<session1>
 	<h2>最新消息</h2>
-	
+		
 	
 	</session1>
 
