@@ -38,9 +38,19 @@
         font-size: 1.5em;
         color: black; 
     }
-    span{
-    	height: 100%;
+    
+    session1 {
+        display: flex;
+        justify-content: center;
+        margin-top:60px;
+        height: 100vh;
     }
+
+    h1 {
+        font-size: 2em;
+        color: black;
+    }
+   
 </style>
 
 
@@ -53,9 +63,8 @@
 	</main>
 	
 	<session1>
-	<h2>最新消息</h2>
-		
-	
+    <h1>最新消息</h1>
+  
 	</session1>
 
 <%@ include file="/WEB-INF/view/footer.jsp" %>
