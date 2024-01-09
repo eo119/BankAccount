@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%> 
 <%@ include file="/WEB-INF/view/header.jsp" %>
-
 <style>
     body, html {
         height: 100%;
@@ -13,8 +12,8 @@
         align-items: center;
         justify-content: center;
         height: 100vh;
-        overflow: hidden; 
-        margin: 0; /* 消除主區塊的margin */
+        overflow: hidden;
+        margin: 0; 
     }
 
     .main {
@@ -23,22 +22,23 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.5); 
+        padding: 20px; 
+        border-radius: 10px; 
     }
 
     img {
         max-height: calc(100vh - 20px);
-        width: 100%; /* 圖片寬度佔據整個版面 */
+        width: 100%; 
         display: block;
-        margin: -20px auto 0; /* 將 margin-top 設為負值 */
+        margin: -20px auto 0; 
     }
 
     h2, span {
         font-size: 1.5em;
+        color: black; 
     }
 </style>
-
-
-
 
 
 	<main>
