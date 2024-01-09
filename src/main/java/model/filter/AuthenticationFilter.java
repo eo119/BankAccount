@@ -49,12 +49,12 @@ public class AuthenticationFilter implements Filter {
             return true;
         }
 
-        // 其他公共資源的檢查，例如登入頁面或靜態資源
+       
         return requestURI.contains("/login.jsp") || requestURI.contains("/public/") || requestURI.contains("/createAccount.jsp");
     }
 
     private boolean isUserLoggedIn(HttpServletRequest request) {
-        HttpSession session = request.getSession(false); // 如果 session 不存在，不要創建新的
+        HttpSession session = request.getSession(false); 
         return session != null && session.getAttribute("isLogin") != null && (boolean) session.getAttribute("isLogin");
     }
 
