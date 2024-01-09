@@ -2,17 +2,24 @@
 <%@ include file="/WEB-INF/view/header.jsp" %>
 
 <style>
-    h2, span{
-        text-align: center;
-        font-size: 1.5em; 
+    body, html {
+        height: 100%;
+        margin: 0;
     }
-    
-    .main{
-    margin-top: 200px;
-    }
-    
-      main, session1 {
+
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         height: 100vh;
+    }
+
+    .main {
+        text-align: center;
+    }
+
+    h2, span {
+        font-size: 1.5em;
     }
 </style>
 
